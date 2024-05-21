@@ -1,0 +1,10 @@
+[1mdiff --git a/current b/plan[m
+[1mindex 46f6a38..e61f08d 100644[m
+[1m--- a/current[m
+[1m+++ b/plan[m
+[36m@@ -1 +1,2 @@[m
+[31m-Day la noi dung co dinh[m
+\ No newline at end of file[m
+[32m+[m[32mDay la noi dung co dinh[m
+[32m+[m[32mDay la noi dung thay doi[m
+\ No newline at end of file[m

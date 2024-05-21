@@ -22,3 +22,11 @@ jobs:
       run: |
         ls ${{ github.workspace }}
     - run: echo "🍏 This job's status is ${{ job.status }}."
+    - run: |
+        git --no-pager diff --color --no-index -- current plan > difference
+        if [ -s difference ]; then
+          echo "# The change" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "There are no changes." >> $GITHUB_STEP_SUMMARY
+        fi
+

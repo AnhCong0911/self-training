@@ -1,0 +1,7 @@
+#!/bin/bash
+git --no-pager diff --color --no-index -- current plan > difference
+if [ -s difference ]; then
+    echo "# The change"
+else
+    echo "There are no changes."
+fi
